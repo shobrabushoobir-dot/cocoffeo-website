@@ -40,6 +40,13 @@ padding:80px 20px;
 text-align:center;
 background:white
 }
+.hero{
+background:linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),url('hero-bg.png');
+background-size:cover;
+background-position:center;
+padding:140px 20px;
+text-align:center;
+}
 .hero h1{
 font-size:42px;
 margin-bottom:10px
@@ -47,6 +54,34 @@ margin-bottom:10px
 .hero p{
 color:#666;
 font-size:18px
+}
+.hero{
+background:url('hero-bg.png') center/cover no-repeat;
+padding:120px 20px;
+text-align:center;
+color:white;
+position:relative;
+}
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+}
+.hero-title{
+position:relative;
+z-index:2;
+}
+.hero-title img{
+height:90px;
+margin-bottom:15px;
+}
+.hero h1{
+font-size:48px;
+color:white;
+}
+.hero p{
+color:#eee;
 }
 .products{
 padding:60px 20px;
@@ -125,6 +160,8 @@ cursor:pointer
 </header>
 
 <section class="hero">
+<div class="hero-title">
+<img src="logo.png">
 <h1 id="title">Cocoffeo Export Indonesia</h1>
 <p id="tagline">Sustainable Indonesian Commodity Export</p>
 </section>
