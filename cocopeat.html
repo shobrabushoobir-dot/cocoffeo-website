@@ -10,9 +10,43 @@
 
 <style>
 body{
-font-family:Poppins;
-margin:0;
-background:#f8f8f8;
+<section class="product-hero">
+<div class="hero-content">
+<h1>Cocopeat Export Indonesia</h1>
+<p>Premium Coconut Peat for Global Market</p>
+</div>
+</section>
+
+.product-hero{
+background:url('cocopeat.png') center/cover no-repeat;
+height:420px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.product-hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero-content h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-content p{
+font-size:20px;
 }
 
 .header{
