@@ -51,10 +51,8 @@ text-decoration:none;
 font-weight:600;
 }
 .product-hero{
-height:500px;
-background-image:url("cocopeat.png");
-background-size:cover;
-background-position:center;
+height:420px;
+background:url("cocopeat.png") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -66,10 +64,7 @@ position:relative;
 .product-hero::after{
 content:"";
 position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
+inset:0;
 background:rgba(0,0,0,0.45);
 }
 
