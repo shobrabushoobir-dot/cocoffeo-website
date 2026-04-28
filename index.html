@@ -8,19 +8,63 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#f8f8f8;color:#222}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif
+}
 
-.logo{
+body{
+background:#f8f8f8;
+color:#222
+}
+
+/* NAVBAR */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 40px;
+background:linear-gradient(90deg,#2e7d32,#5d4037);
+color:white;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.nav-left{
 display:flex;
 align-items:center;
 gap:10px;
 font-weight:600;
 }
 
-.logo img{
-height:70px;
+.nav-left img{
+height:36px;
 width:auto;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.nav-right a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.nav-right button{
+background:rgba(255,255,255,0.15);
+border:1px solid rgba(255,255,255,0.3);
+color:white;
+padding:5px 10px;
+border-radius:6px;
+cursor:pointer;
+font-size:13px;
 }
 
 .hero p{
@@ -153,60 +197,6 @@ letter-spacing:0.5px;
 .hero #tagline{
 background:rgba(0,0,0,0.85) !important;
 color:#fff !important;
-}
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-background:linear-gradient(90deg,#2e7d32,#5d4037);
-color:white;
-position:sticky;
-top:0;
-z-index:999;
-}
-
-.nav-left{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:600;
-}
-
-.nav-left img{
-height:32px;
-}
-
-.nav-right{
-display:flex;
-gap:25px;
-}
-
-.nav-right a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-.nav-right a:hover{
-opacity:0.8;
-}
-.navbar img{
-height:40px !important;
-width:auto !important;
-}
-.nav-right button{
-background:rgba(255,255,255,0.15);
-border:1px solid rgba(255,255,255,0.3);
-color:white;
-padding:5px 10px;
-border-radius:6px;
-cursor:pointer;
-font-size:13px;
-}
-
-.nav-right button:hover{
-background:rgba(255,255,255,0.25);
 }
 
 </style>
