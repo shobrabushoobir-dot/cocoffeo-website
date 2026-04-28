@@ -8,10 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-font-family:Poppins;
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
 background:#f8f8f8;
+color:#222;
 }
 
 .header{
@@ -21,35 +28,6 @@ padding:20px 40px;
 font-weight:600;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.whatsapp{
-display:inline-block;
-margin-top:30px;
-background:#25D366;
-color:white;
-padding:14px 22px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-}
 .product-hero{
 height:420px;
 background:url("cocopeat.png") center/cover no-repeat;
@@ -74,13 +52,50 @@ z-index:2;
 }
 
 .hero-content h1{
-font-size:44px;
+font-size:42px;
 margin-bottom:10px;
 }
 
 .hero-content p{
 font-size:20px;
 }
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2e7d32;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:30px;
+background:#25D366;
+color:white;
+padding:14px 22px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+}
+
 </style>
 </head>
 
@@ -96,6 +111,9 @@ COCOFFEO EXPORT INDONESIA
 <p>Premium Coconut Peat for Global Market</p>
 </div>
 </section>
+
+<div class="container">
+
 <h2>Product Description</h2>
 <p>
 High quality Indonesian cocopeat made from selected coconut husk.
@@ -108,11 +126,11 @@ Suitable for agriculture, hydroponic, horticulture and greenhouse use.
 <h3>Specifications</h3>
 <ul>
 <li>Moisture : 15% - 20%</li>
-<li>EC : < 0.5 mS/cm</li>
+<li>EC : &lt; 0.5 mS/cm</li>
 <li>pH : 5.5 - 6.5</li>
 <li>Expansion : 70L - 80L</li>
-<li>Fiber : < 3%</li>
-<li>Sand : < 2%</li>
+<li>Fiber : &lt; 3%</li>
+<li>Sand : &lt; 2%</li>
 </ul>
 </div>
 
