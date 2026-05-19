@@ -194,8 +194,9 @@ background:white;
 min-width:180px;
 border-radius:8px;
 box-shadow:0 8px 20px rgba(0,0,0,.15);
-overflow:hidden;
 z-index:1000;
+
+flex-direction:column;   /* tambahkan */
 }
 
 .dropdown-content a{
@@ -212,7 +213,7 @@ color:#2e7d32 !important;
 }
 
 .dropdown:hover .dropdown-content{
-display:block;
+display:flex;
 }
 </style>
 </head>
